@@ -4,6 +4,8 @@
 
 A tiny (~4.8 KB), dependency-free **invisibility cloak** for your web page. It politely asks visitors to stop poking around in DevTools, throws a big scary console warning at would-be scam victims, and — when someone opens DevTools anyway — drops a full-screen overlay.
 
+**🔗 Live demo: [cloakjs.pages.dev](https://cloakjs.pages.dev/)** — go ahead, try to press F12. We dare you.
+
 It's one line. You wear it. Done.
 
 ```html
