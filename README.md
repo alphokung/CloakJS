@@ -9,10 +9,12 @@ A tiny (~4.8 KB), dependency-free **invisibility cloak** for your web page. It p
 It's one line. You wear it. Done.
 
 ```html
-<script src="cloak.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alphokung/cloakjs@master/cloak.min.js"></script>
 ```
 
 That's the whole tutorial. You may leave now. Or keep reading, the trust issues section is fun.
+
+> 📦 **Prefer to self-host?** Download [`cloak.min.js`](cloak.min.js) (or the readable [`cloak.js`](cloak.js)) and point the `src` at your own copy: `<script src="cloak.min.js"></script>`.
 
 ---
 
@@ -43,7 +45,7 @@ Anyone who knows what they're doing can lift the cloak in about four seconds. So
 Include the script. Walk away. The cloak puts itself on with sensible defaults.
 
 ```html
-<script src="cloak.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alphokung/cloakjs@master/cloak.min.js"></script>
 ```
 
 ### Option B: The control freak
@@ -52,7 +54,7 @@ Call `wear()` to customize. Anything you don't set falls back to the defaults.
 
 ```html
 <!-- 1. Load the cloak FIRST (very important, see Troubleshooting) -->
-<script src="cloak.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alphokung/cloakjs@master/cloak.min.js"></script>
 
 <!-- 2. THEN wear it your way -->
 <script>
@@ -155,7 +157,7 @@ Neither is foolproof. A determined nerd with `:root` access and a dream will get
 ## 🆘 Troubleshooting
 
 **"`CloakJS.wear()` does nothing / my custom message won't show up."**
-- The `<script src="cloak.js">` tag must come **before** your `wear()` call. Load the cloak before you try to wear it. This is also good life advice.
+- The CloakJS `<script>` tag must come **before** your `wear()` call. Load the cloak before you try to wear it. This is also good life advice.
 - Console says `CloakJS is not defined`? The script didn't load. Wrong path, or wrong order. (See above. The cloak. Before. Wearing it.)
 - Calling `wear()` twice re-wears from scratch — the **last** call wins.
 
