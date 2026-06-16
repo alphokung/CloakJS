@@ -6,6 +6,12 @@ A tiny (~4.8 KB), dependency-free **invisibility cloak** for your web page. It p
 
 **🔗 Live demo: [cloakjs.pages.dev](https://cloakjs.pages.dev/)** — go ahead, try to press F12. We dare you.
 
+### 👀 What it looks like when someone peeks
+
+When DevTools is detected, CloakJS drops this full-screen overlay over the page:
+
+![CloakJS block overlay](https://cloakjs.pages.dev/_media/block-ui.png)
+
 It's one line. You wear it. Done.
 
 ```html
